@@ -15,6 +15,12 @@ that avoids the headaches of macOS-based package management systems
 ecosystem, there is nothing macOS-specific in the tooling that would preven it
 from being used on Windows or Linux.
 
+## Packages Provided
+
+The following packages are available in the support container image:
+
+1. [`pdfgrep`](https://pdfgrep.org/) - Flexible PDF search
+
 # How to Use
 
 Instructions for building a local container and using it are in the *Quick and

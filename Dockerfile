@@ -9,7 +9,11 @@ ARG USERNAME=user
 ARG UID=501
 ARG GID=20
 
-# XXX: install packages and add customization here.
+# enable the user to regexp search through PDFs with pdfgrep.
+RUN \
+    apt-get update && \
+    apt install -y pdfgrep && \
+    rm -rf /var/lib/apt/lists/*
 
 # add the user with appropriate UID/GID.
 #
